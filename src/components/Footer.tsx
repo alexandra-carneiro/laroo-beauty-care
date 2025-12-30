@@ -1,88 +1,89 @@
-import { MapPin, Phone, MessageCircle, Instagram } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-laroo.jpeg";
+import { motion } from "framer-motion";
+import { MapPin, Phone, Mail, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer id="agendar" className="bg-primary text-primary-foreground">
-      {/* Map Placeholder */}
-      <div className="h-72 bg-sand relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <div className="w-full h-full bg-muted/50 flex items-center justify-center border-b border-border">
-            <div className="text-center">
-              <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />
-              <p className="font-display text-xl text-foreground mb-1">Localizado no coração de Coimbra</p>
-              <p className="font-body text-sm text-muted-foreground">(Mapa do Google será integrado aqui)</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="container py-16 md:py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-primary-foreground mb-4">
+            Estamos à sua espera.
+          </h2>
+          <p className="font-body text-primary-foreground/80 max-w-md mx-auto">
+            Venha conhecer o nosso espaço e desfrutar de um chá enquanto cuidamos de si.
+          </p>
+        </motion.div>
 
-      {/* Contact Info */}
-      <div className="container py-12">
-        <div className="grid md:grid-cols-3 gap-8 items-center">
-          {/* Logo & Address */}
-          <div>
-            <img 
-              src={logo} 
-              alt="Laroo Beauty & Care" 
-              className="h-12 w-auto rounded-lg mb-4 brightness-0 invert"
-            />
-            <div className="flex items-start gap-2 text-primary-foreground/80">
-              <MapPin className="w-4 h-4 mt-1 shrink-0" />
-              <p className="font-body text-sm leading-relaxed">
-                Rua Exemplo, 123<br />
-                3000-000 Coimbra, Portugal
-              </p>
+        <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+          {/* Location */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-8"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <MapPin className="w-5 h-5 text-secondary" />
+              <h3 className="font-display text-xl text-primary-foreground">Localização</h3>
             </div>
-          </div>
-
-          {/* Contact */}
-          <div className="flex flex-col gap-3">
+            <p className="font-body text-primary-foreground/80 mb-6 leading-relaxed">
+              Rua Ferreira Borges, 123<br />
+              3000-000 Coimbra
+            </p>
             <a 
-              href="tel:+351XXXXXXXXX" 
-              className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="font-body text-sm">+351 XXX XXX XXX</span>
-            </a>
-            <a 
-              href="https://instagram.com/laroobeautycare" 
+              href="https://maps.google.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              className="inline-flex items-center gap-2 font-body text-secondary hover:text-secondary/80 transition-colors"
             >
-              <Instagram className="w-4 h-4" />
-              <span className="font-body text-sm">@laroobeautycare</span>
+              <ExternalLink className="w-4 h-4" />
+              Abrir no Maps
             </a>
-          </div>
+          </motion.div>
 
-          {/* CTA */}
-          <div className="md:text-right">
-            <Button 
-              size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold rounded-full px-8"
-              asChild
-            >
+          {/* Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-8"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <Phone className="w-5 h-5 text-secondary" />
+              <h3 className="font-display text-xl text-primary-foreground">Contacto</h3>
+            </div>
+            <div className="space-y-3">
               <a 
-                href="https://wa.me/351XXXXXXXXX" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                href="tel:+351912345678" 
+                className="flex items-center gap-2 font-body text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
-                Falar no WhatsApp
+                +351 912 345 678
               </a>
-            </Button>
-          </div>
+              <a 
+                href="mailto:ola@laroobeauty.pt" 
+                className="flex items-center gap-2 font-body text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                ola@laroobeauty.pt
+              </a>
+            </div>
+          </motion.div>
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center">
-          <p className="font-body text-xs text-primary-foreground/60">
-            © {currentYear} Laroo Beauty & Care. Todos os direitos reservados.
+        <div className="mt-16 pt-8 border-t border-primary-foreground/20 text-center">
+          <p className="font-body text-sm text-primary-foreground/60">
+            © {currentYear} Laroo Beauty. Design by VibeCoding.
           </p>
         </div>
       </div>
