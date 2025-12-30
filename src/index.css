@@ -5,6 +5,7 @@
 @import "@fontsource/inter/300.css";
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
 
 @tailwind base;
 @tailwind components;
@@ -12,68 +13,63 @@
 
 @layer base {
   :root {
-    /* Laroo Earth Tones Palette */
-    --background: 35 30% 97%;
-    --foreground: 25 20% 20%;
+    /* Laroo Commercial Palette - Clean & Elegant */
+    --background: 40 33% 96%; /* Off-White #FAFAFA equivalent */
+    --foreground: 75 42% 24%; /* Verde Musgo escuro para texto */
 
-    --card: 35 25% 95%;
-    --card-foreground: 25 20% 20%;
+    --card: 36 33% 96%; /* Bege Areia #F5F1E8 */
+    --card-foreground: 75 42% 24%;
 
-    --popover: 35 30% 97%;
-    --popover-foreground: 25 20% 20%;
+    --popover: 40 33% 96%;
+    --popover-foreground: 75 42% 24%;
 
-    /* Terracotta - Primary Brand Color */
-    --primary: 18 50% 45%;
-    --primary-foreground: 35 30% 97%;
+    /* Verde Musgo - Primary Brand */
+    --primary: 75 42% 25%; /* #4A5D23 */
+    --primary-foreground: 40 33% 96%;
 
-    /* Moss Green - Secondary */
-    --secondary: 90 25% 35%;
-    --secondary-foreground: 35 30% 97%;
+    /* Terracota - Secondary/Accent */
+    --secondary: 25 35% 67%; /* #CCA487 */
+    --secondary-foreground: 75 42% 20%;
 
-    /* Sand Beige - Muted */
-    --muted: 35 25% 90%;
-    --muted-foreground: 25 15% 45%;
+    /* Bege Areia - Muted */
+    --muted: 36 33% 94%; /* #F5F1E8 */
+    --muted-foreground: 75 25% 40%;
 
-    /* Warm Accent */
-    --accent: 25 40% 88%;
-    --accent-foreground: 25 20% 20%;
+    /* Terracota Light - Accent */
+    --accent: 25 35% 67%;
+    --accent-foreground: 75 42% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 20% 85%;
-    --input: 30 20% 85%;
-    --ring: 18 50% 45%;
+    --border: 36 20% 88%;
+    --input: 36 20% 88%;
+    --ring: 75 42% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     /* Custom Design Tokens */
-    --terracotta: 18 50% 45%;
-    --terracotta-light: 18 45% 55%;
-    --terracotta-dark: 18 55% 38%;
-    --moss: 90 25% 35%;
-    --moss-light: 90 20% 45%;
-    --sand: 35 30% 92%;
-    --cream: 35 30% 97%;
-    --warm-gray: 25 10% 60%;
+    --moss: 75 42% 25%; /* Verde Musgo #4A5D23 */
+    --moss-light: 75 35% 35%;
+    --moss-dark: 75 45% 18%;
+    --terracotta: 25 35% 67%; /* Terracota #CCA487 */
+    --terracotta-dark: 25 40% 55%;
+    --sand: 36 33% 94%; /* Bege Areia #F5F1E8 */
+    --offwhite: 40 33% 98%; /* Off-White #FAFAFA */
+    --cream: 36 30% 92%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(35 30% 97%) 0%, hsl(35 25% 92%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(18 50% 45%) 0%, hsl(18 45% 55%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(35 25% 95%) 0%, hsl(35 30% 97%) 100%);
-
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(25 20% 20% / 0.08);
-    --shadow-card: 0 8px 30px -8px hsl(25 20% 20% / 0.1);
-    --shadow-elevated: 0 20px 50px -15px hsl(25 20% 20% / 0.15);
+    /* Shadows - Warm & Soft */
+    --shadow-soft: 0 2px 12px -2px hsl(75 42% 25% / 0.08);
+    --shadow-card: 0 8px 24px -6px hsl(75 42% 25% / 0.12);
+    --shadow-elevated: 0 16px 40px -10px hsl(75 42% 25% / 0.18);
 
     /* Typography */
     --font-display: "Playfair Display", Georgia, serif;
     --font-body: "Inter", system-ui, sans-serif;
 
     /* Transitions */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -86,33 +82,33 @@
   }
 
   .dark {
-    --background: 25 20% 10%;
-    --foreground: 35 25% 92%;
+    --background: 75 30% 8%;
+    --foreground: 36 33% 92%;
 
-    --card: 25 18% 15%;
-    --card-foreground: 35 25% 92%;
+    --card: 75 25% 12%;
+    --card-foreground: 36 33% 92%;
 
-    --popover: 25 20% 10%;
-    --popover-foreground: 35 25% 92%;
+    --popover: 75 30% 8%;
+    --popover-foreground: 36 33% 92%;
 
-    --primary: 18 50% 55%;
-    --primary-foreground: 25 20% 10%;
+    --primary: 75 35% 45%;
+    --primary-foreground: 75 30% 8%;
 
-    --secondary: 90 20% 45%;
-    --secondary-foreground: 25 20% 10%;
+    --secondary: 25 30% 50%;
+    --secondary-foreground: 75 30% 8%;
 
-    --muted: 25 15% 20%;
-    --muted-foreground: 35 20% 65%;
+    --muted: 75 20% 15%;
+    --muted-foreground: 36 25% 60%;
 
-    --accent: 25 30% 25%;
-    --accent-foreground: 35 25% 92%;
+    --accent: 25 30% 45%;
+    --accent-foreground: 36 33% 92%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 25 15% 25%;
-    --input: 25 15% 25%;
-    --ring: 18 50% 55%;
+    --border: 75 20% 20%;
+    --input: 75 20% 20%;
+    --ring: 75 35% 45%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -146,32 +142,28 @@
 }
 
 @layer components {
-  .text-balance {
-    text-wrap: balance;
-  }
-
   .section-padding {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply py-16 md:py-20;
   }
 
   .container-narrow {
-    @apply max-w-4xl mx-auto px-6;
+    @apply max-w-5xl mx-auto px-6;
   }
 }
 
 @layer utilities {
   .animate-fade-up {
-    animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: fadeUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   @keyframes fadeUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -180,17 +172,12 @@
   }
 
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
 }
