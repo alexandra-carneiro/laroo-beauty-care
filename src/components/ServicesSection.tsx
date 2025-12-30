@@ -8,13 +8,13 @@ import serviceLashes from "@/assets/service-lashes.jpg";
 const services = [
   {
     id: "unhas",
-    title: "Unhas de Gel & Nail Art",
+    title: "Unhas & Gel",
     price: "Desde 15€",
     image: serviceNails
   },
   {
     id: "pestanas",
-    title: "Pestanas & Sobrancelhas",
+    title: "Pestanas & Olhar",
     price: "Desde 40€",
     image: serviceLashes
   },
@@ -26,7 +26,7 @@ const services = [
   },
   {
     id: "massagem",
-    title: "Massagens Relaxantes",
+    title: "Massagens de Relaxamento",
     price: "Desde 45€",
     image: serviceMassage
   }
@@ -51,7 +51,7 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
@@ -68,23 +68,19 @@ const ServicesSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-5">
+              <div className="p-5 text-center">
                 <h3 className="font-display text-xl text-foreground mb-2">
                   {service.title}
                 </h3>
-                <div className="flex items-center justify-between">
-                  <span className="font-body text-sm font-semibold text-primary">
-                    {service.price}
-                  </span>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="text-sm border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground"
-                    asChild
-                  >
-                    <a href="#agendar">Ver Detalhes</a>
-                  </Button>
-                </div>
+                <p className="font-body text-lg font-semibold text-primary mb-4">
+                  {service.price}
+                </p>
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-body rounded-full"
+                  asChild
+                >
+                  <a href="#agendar">Agendar</a>
+                </Button>
               </div>
             </motion.article>
           ))}

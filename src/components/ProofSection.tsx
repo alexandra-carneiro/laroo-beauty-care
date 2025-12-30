@@ -1,15 +1,24 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
-import serviceNails from "@/assets/service-nails.jpg";
-import serviceLashes from "@/assets/service-lashes.jpg";
-import serviceFacial from "@/assets/service-facial.jpg";
-import serviceMassage from "@/assets/service-massage.jpg";
+import { Quote } from "lucide-react";
 
-const images = [serviceNails, serviceLashes, serviceFacial, serviceMassage];
+const testimonials = [
+  {
+    id: 1,
+    text: "Finalmente encontrei um lugar onde me sinto realmente cuidada. O ambiente é maravilhoso e os resultados são sempre impecáveis!",
+    author: "Maria S.",
+    detail: "cliente desde 2023"
+  },
+  {
+    id: 2,
+    text: "As minhas unhas nunca estiveram tão bonitas. A equipa é super atenciosa e o espaço transmite uma paz incrível.",
+    author: "Ana P.",
+    detail: "cliente desde 2024"
+  }
+];
 
 const ProofSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-primary">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,54 +27,43 @@ const ProofSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <h2 className="font-display text-2xl md:text-3xl text-foreground mb-2">
-            Resultados Reais
+          <h2 className="font-display text-2xl md:text-3xl text-primary-foreground mb-2">
+            O Que Dizem as Nossas Clientes
           </h2>
-          <p className="font-body text-muted-foreground">
-            Veja o trabalho das nossas especialistas
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
-          {images.map((img, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <motion.blockquote
+              key={testimonial.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="aspect-square rounded-xl overflow-hidden"
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="relative bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8"
             >
-              <img 
-                src={img} 
-                alt={`Resultado ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </motion.div>
+              <Quote className="w-10 h-10 text-secondary/60 mb-4" />
+              <p className="font-body text-primary-foreground/90 text-lg leading-relaxed mb-6">
+                "{testimonial.text}"
+              </p>
+              <footer className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-secondary/30 flex items-center justify-center">
+                  <span className="font-display text-lg text-primary-foreground">
+                    {testimonial.author.charAt(0)}
+                  </span>
+                </div>
+                <div>
+                  <cite className="font-body font-semibold text-primary-foreground not-italic block">
+                    {testimonial.author}
+                  </cite>
+                  <span className="font-body text-sm text-primary-foreground/70">
+                    {testimonial.detail}
+                  </span>
+                </div>
+              </footer>
+            </motion.blockquote>
           ))}
         </div>
-
-        {/* Testimonial */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="max-w-xl mx-auto bg-card rounded-2xl p-6 md:p-8 shadow-card text-center"
-        >
-          <div className="flex justify-center gap-1 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-            ))}
-          </div>
-          <blockquote className="font-body text-foreground leading-relaxed mb-4">
-            "Finalmente encontrei um lugar onde me sinto realmente cuidada. 
-            O ambiente é maravilhoso e os resultados são sempre impecáveis!"
-          </blockquote>
-          <cite className="font-body text-sm text-muted-foreground not-italic">
-            — Maria S., cliente desde 2023
-          </cite>
-        </motion.div>
       </div>
     </section>
   );

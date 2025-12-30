@@ -8,12 +8,14 @@ const Footer = () => {
   return (
     <footer id="agendar" className="bg-primary text-primary-foreground">
       {/* Map Placeholder */}
-      <div className="h-64 bg-muted relative">
-        <div className="absolute inset-0 flex items-center justify-center bg-sand">
-          <div className="text-center">
-            <MapPin className="w-8 h-8 text-primary mx-auto mb-2" />
-            <p className="font-body text-sm text-muted-foreground">Mapa do Google</p>
-            <p className="font-body text-xs text-muted-foreground">(Placeholder)</p>
+      <div className="h-72 bg-sand relative">
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <div className="w-full h-full bg-muted/50 flex items-center justify-center border-b border-border">
+            <div className="text-center">
+              <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />
+              <p className="font-display text-xl text-foreground mb-1">Localizado no coração de Coimbra</p>
+              <p className="font-body text-sm text-muted-foreground">(Mapa do Google será integrado aqui)</p>
+            </div>
           </div>
         </div>
       </div>
