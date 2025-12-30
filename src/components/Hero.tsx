@@ -46,7 +46,7 @@ const Hero = () => {
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold text-base px-8 py-6 rounded-full shadow-elevated"
               asChild
             >
-              <a href="#agendar">Agendar Horário</a>
+              <a href="#agendar">Agendar Momento de Beleza</a>
             </Button>
           </motion.div>
         </div>
