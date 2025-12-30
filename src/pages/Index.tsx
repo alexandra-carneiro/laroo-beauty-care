@@ -1,39 +1,40 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import PainSection from "@/components/PainSection";
-import SolutionSection from "@/components/SolutionSection";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import CTASection from "@/components/CTASection";
+import DifferentialSection from "@/components/DifferentialSection";
+import ProofSection from "@/components/ProofSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Laroo Beauty & Care | Estúdio de Estética e Bem-estar em Coimbra</title>
+        <title>Laroo Beauty & Care | Estética em Coimbra - Unhas, Pestanas, Facial</title>
         <meta 
           name="description" 
-          content="Descubra o novo conceito de beleza natural em Coimbra. Unhas, estética facial, pestanas, massagens e epilação num ambiente exclusivo e acolhedor. Agende agora." 
+          content="Laroo Beauty & Care em Coimbra. Unhas de Gel desde 15€, Pestanas desde 40€, Estética Facial e Massagens. Agende agora!" 
         />
-        <meta name="keywords" content="estética Coimbra, manicure Coimbra, massagem relaxamento, pestanas naturais, beleza natural, spa Coimbra" />
+        <meta name="keywords" content="unhas gel Coimbra, pestanas Coimbra, estética facial, massagem relaxamento, manicure Coimbra" />
         <link rel="canonical" href="https://laroobeauty.pt" />
-        <meta property="og:title" content="Laroo Beauty & Care | Estética e Bem-estar em Coimbra" />
-        <meta property="og:description" content="Um novo conceito de beleza natural em Coimbra. Experimente tratamentos exclusivos num ambiente de puro bem-estar." />
+        <meta property="og:title" content="Laroo Beauty & Care | Estética em Coimbra" />
+        <meta property="og:description" content="Especialistas em Unhas de Gel, Pestanas, Estética Facial e Massagens. Agende agora!" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BeautySalon",
             "name": "Laroo Beauty & Care",
-            "description": "Estúdio de Estética e Bem-estar em Coimbra",
+            "description": "Estúdio de Estética em Coimbra - Unhas, Pestanas, Facial e Massagens",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Rua Exemplo, 123",
               "addressLocality": "Coimbra",
+              "postalCode": "3000-000",
               "addressCountry": "PT"
             },
-            "priceRange": "€€",
+            "priceRange": "€-€€",
+            "telephone": "+351XXXXXXXXX",
             "openingHours": "Tu-Sa 09:00-19:00"
           })}
         </script>
@@ -43,11 +44,9 @@ const Index = () => {
       
       <main>
         <Hero />
-        <PainSection />
-        <SolutionSection />
         <ServicesSection />
-        <TestimonialsSection />
-        <CTASection />
+        <DifferentialSection />
+        <ProofSection />
       </main>
 
       <Footer />
