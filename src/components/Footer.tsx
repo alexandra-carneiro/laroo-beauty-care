@@ -36,12 +36,12 @@ const Footer = () => {
               <h3 className="font-display text-xl text-primary-foreground">Localização</h3>
             </div>
             <p className="font-body text-primary-foreground/80 mb-6 leading-relaxed">
-              Rua Ferreira Borges, 123<br />
-              3000-000 Coimbra
+              Rua Armando de Sousa, Loja 11<br />
+              3030-403 Coimbra
             </p>
-            <a 
-              href="https://maps.google.com" 
-              target="_blank" 
+            <a
+              href="https://maps.app.goo.gl/dXqEknbWdqyDB8Fd6"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-body text-secondary hover:text-secondary/80 transition-colors"
             >
@@ -60,30 +60,46 @@ const Footer = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <Phone className="w-5 h-5 text-secondary" />
-              <h3 className="font-display text-xl text-primary-foreground">Contacto</h3>
+              <h3 className="font-display text-xl text-primary-foreground">Contactos</h3>
             </div>
             <div className="space-y-3">
-              <a 
-                href="tel:+351912345678" 
+              <a
+                href="https://wa.link/0as086"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                +351 912 345 678
+                Whatsapp: +351 910 248 906
               </a>
-              <a 
-                href="mailto:ola@laroobeauty.pt" 
+              <a
+                href="https://www.instagram.com/laroobeautycare/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                <Mail className="w-4 h-4" />
-                ola@laroobeauty.pt
+                Instagram: @laroobeautycare
               </a>
             </div>
           </motion.div>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/20 text-center">
+        {/* Legal & Bottom */}
+        <div className="mt-16 pt-8 border-t border-primary-foreground/20 text-center space-y-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-primary-foreground/60">
+            <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+              Livro de Reclamações Eletrónico
+            </a>
+            <span className="hidden md:inline">•</span>
+            <span>
+              Entidade de Resolução Alternativa de Litígios de Consumo (RAL)
+            </span>
+          </div>
+          <div className="flex justify-center gap-6 text-xs text-primary-foreground/60">
+            <a href="/politica-privacidade" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a>
+            <a href="/termos-condicoes" className="hover:text-primary-foreground transition-colors">Termos e Condições</a>
+          </div>
           <p className="font-body text-sm text-primary-foreground/60">
-            © {currentYear} Laroo Beauty. Design by VibeCoding.
+            © 2025 Laroo Beauty & Care. Design by Avante Digital.
           </p>
         </div>
       </div>

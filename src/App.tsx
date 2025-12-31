@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import FixedSocials from "./components/FixedSocials";
 
 const queryClient = new QueryClient();
 
@@ -15,9 +18,12 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <FixedSocials />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/politica-privacidade" element={<Privacy />} />
+            <Route path="/termos-condicoes" element={<Terms />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

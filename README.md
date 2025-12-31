@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+🌿 Laroo Beauty & Care - Landing Page
 
-## Project info
+"Beleza natural, experiência sensorial."
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Este projeto é uma Landing Page de alta conversão desenvolvida para o estúdio de estética Laroo Beauty & Care, localizado em Coimbra, Portugal. O design combina a elegância minimalista de um spa com uma arquitetura de informação focada em vendas e agendamento de serviços.
 
-## How can I edit this code?
+🎯 Objetivo do Projeto
 
-There are several ways of editing your application.
+O principal desafio deste projeto foi equilibrar o Branding (Conceito/Vibe) com a Conversão (Venda).
 
-**Use Lovable**
+Diferente de templates genéricos, esta página foi desenhada para:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Vitrine Imediata: Expor os serviços (Unhas, Pestanas, Facial, Massagem) logo na primeira dobra.
 
-Changes made via Lovable will be committed automatically to this repo.
+Identidade Visual: Utilizar a paleta de cores exata da marca (extraída do Instagram).
 
-**Use your preferred IDE**
+Experiência do Utilizador: Navegação fluida, botões claros e design responsivo (Mobile-First).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🎨 Identidade Visual & Design System
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A estética foi baseada no arquétipo do "Cuidador" e "Inocente", transmitindo pureza, natureza e sofisticação.
 
-Follow these steps:
+Paleta de Cores (Hex Codes Oficiais)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Cor
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Hex
 
-# Step 3: Install the necessary dependencies.
-npm i
+Uso Principal
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Verde Musgo Profundo
 
-**Edit a file directly in GitHub**
+#4A5240
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Títulos, Botões Primários, Rodapé
 
-**Use GitHub Codespaces**
+Terracota Aveludado
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+#AD8A72
 
-## What technologies are used for this project?
+Destaques, Ícones, Hover, Badges
 
-This project is built with:
+Bege Areia / Pedra
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+#D9CFC4
 
-## How can I deploy this project?
+Fundos de Seção, Elementos Neutros
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Off-White / Creme
 
-## Can I connect a custom domain to my Lovable project?
+#F7F5F0
 
-Yes, you can!
+Fundo Principal (Background)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Branco Puro
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+#FFFFFF
+
+Cards e Superfícies de Leitura
+
+Tipografia
+
+Títulos (Serifa): Playfair Display - Para elegância e sofisticação.
+
+Corpo (Sans): Inter ou Manrope - Para legibilidade moderna e limpa.
+
+⚡ Tecnologias Utilizadas
+
+HTML5 Semântico: Estrutura otimizada para SEO.
+
+Tailwind CSS (CDN): Estilização rápida, responsiva e moderna.
+
+Google Fonts: Tipografia web otimizada.
+
+Design Pattern: "Split Hero" (Texto à esquerda, Imagem à direita) inspirado no estilo Lovable.
+
+🏗️ Estrutura da Página
+
+Navbar Sticky: Menu fixo com efeito glassmorphism (vidro fosco) para acesso rápido ao agendamento.
+
+Hero Section (Split):
+
+Headline focada em benefício ("Beleza natural").
+
+Imagem de alta qualidade com bordas arredondadas.
+
+Badge "Novo em Coimbra" para gatilho de novidade.
+
+Menu de Serviços (Grid):
+
+4 Cards principais com fotos reais (não ícones).
+
+Preço base ("Desde X€") visível para qualificar o lead.
+
+Botão "Agendar" direto no card.
+
+Conceito (Sobre): Breve explicação da filosofia da marca (produtos cruelty-free, ambiente calmo).
+
+Prova Social: Depoimentos de clientes reais em cards elegantes.
+
+Rodapé: Informações locais (Morada em Coimbra), Mapa e Contactos rápidos.
+
+🚀 Como Executar
+
+Este é um projeto estático, o que significa que não requer instalação complexa de dependências (Node.js, NPM, etc.) para visualização.
+
+Opção 1: Visualização Rápida
+
+Faça o download do ficheiro index.html.
+
+Clique duas vezes para abrir no seu navegador (Chrome, Safari, Edge).
+
+Opção 2: Edição (VS Code)
+
+Clone este repositório ou baixe os ficheiros.
+
+Abra a pasta no VS Code.
+
+Instale a extensão "Live Server".
+
+Clique em "Go Live" no canto inferior direito para ver as alterações em tempo real.
+
+🧠 Engenharia de Prompt (AI Generation)
+
+Para replicar ou expandir este design utilizando ferramentas de IA (como Lovable, v0 ou Readdy), utilize o seguinte contexto de prompt:
+
+"Crie uma landing page estilo 'Lovable' para um estúdio de estética. Use um layout 'Split Hero' no topo. A paleta de cores deve ser Verde Musgo (#4A5240) e Terracota (#AD8A72) sobre um fundo Off-White (#F7F5F0). Priorize uma grid de serviços com fotos logo após o Hero. A tipografia deve misturar Playfair Display (títulos) com Inter (texto)."
+
+📄 Licença
+
+Desenvolvido exclusivamente para Laroo Beauty & Care.
+
+Todos os direitos de imagem e marca reservados.
+
+Desenvolvido por Avante Digital.

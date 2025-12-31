@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
+import GallerySection from "@/components/GallerySection";
+import OwnerSection from "@/components/OwnerSection";
 import ConceptSection from "@/components/ConceptSection";
 import ProofSection from "@/components/ProofSection";
 import Footer from "@/components/Footer";
@@ -11,9 +13,9 @@ const Index = () => {
     <>
       <Helmet>
         <title>Laroo Beauty & Care | Estética em Coimbra - Unhas, Pestanas, Facial</title>
-        <meta 
-          name="description" 
-          content="Laroo Beauty & Care em Coimbra. Unhas de Gel desde 15€, Pestanas desde 25€, Facial desde 40€ e Spa desde 35€. Agende agora!" 
+        <meta
+          name="description"
+          content="Laroo Beauty & Care em Coimbra. Unhas de Gel desde 15€, Pestanas desde 25€, Facial desde 40€ e Spa desde 35€. Agende agora!"
         />
         <meta name="keywords" content="unhas gel Coimbra, pestanas Coimbra, estética facial, massagem relaxamento, manicure Coimbra" />
         <link rel="canonical" href="https://laroobeauty.pt" />
@@ -28,23 +30,25 @@ const Index = () => {
             "description": "Estúdio de Estética em Coimbra - Unhas, Pestanas, Facial e Spa",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Rua Ferreira Borges, 123",
+              "streetAddress": "Rua Armando de Sousa, Loja 11",
               "addressLocality": "Coimbra",
-              "postalCode": "3000-000",
+              "postalCode": "3030-403",
               "addressCountry": "PT"
             },
             "priceRange": "€-€€",
-            "telephone": "+351912345678",
+            "telephone": "+351910248906",
             "openingHours": "Tu-Sa 09:00-19:00"
           })}
         </script>
       </Helmet>
 
       <Navbar />
-      
+
       <main>
         <Hero />
         <ServicesSection />
+        <GallerySection />
+        <OwnerSection />
         <ConceptSection />
         <ProofSection />
       </main>

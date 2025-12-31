@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+import tailwindAnimate from "tailwindcss-animate";
+
 export default {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
@@ -25,48 +27,44 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "#F7F5F0", // Off-White
+        foreground: "#2F3825", // Moss (Verde Musgo Escuro)
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#2F3825", // Moss Escuro
+          foreground: "#F7F5F0", // Off-White
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "#8C5E45", // Terracotta Escuro
+          foreground: "#F7F5F0", // Off-White
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#D9CFC4", // Sand/Beige
+          foreground: "#2F3825", // Moss
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#8C5E45", // Terracotta
+          foreground: "#F7F5F0", // Off-White
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "#F7F5F0", // Off-White
+          foreground: "#2F3825", // Moss
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#F7F5F0", // Off-White
+          foreground: "#2F3825", // Moss
         },
         moss: {
-          DEFAULT: "hsl(var(--moss))",
-          light: "hsl(var(--moss-light))",
-          dark: "hsl(var(--moss-dark))",
+          DEFAULT: "#2F3825",
+          light: "#4A5240",
+          dark: "#1F2618",
         },
         terracotta: {
-          DEFAULT: "hsl(var(--terracotta))",
-          dark: "hsl(var(--terracotta-dark))",
+          DEFAULT: "#AD8A72",
+          dark: "#8D6A52",
         },
-        sand: "hsl(var(--sand))",
-        offwhite: "hsl(var(--offwhite))",
-        cream: "hsl(var(--cream))",
+        sand: "#D9CFC4",
+        offwhite: "#F7F5F0",
+        cream: "#F7F5F0",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -104,5 +102,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindAnimate],
 } satisfies Config;

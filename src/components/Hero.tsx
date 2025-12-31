@@ -4,12 +4,12 @@ import heroImage from "@/assets/hero-spa.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+    <section className="relative h-[100dvh] flex items-center overflow-hidden pt-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Beleza natural - close-up de pele radiante" 
+        <img
+          src={heroImage}
+          alt="Beleza natural - close-up de pele radiante"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
@@ -33,7 +33,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8"
           >
-            Especialistas em Unhas de Gel, Pestanas, Estética Facial e Massagens.
+            Especialistas em Unhas de Gel, Pestanas, Limpeza de Pele, Massagens e Epilação.
           </motion.p>
 
           <motion.div
@@ -41,12 +41,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold text-base px-8 py-6 rounded-full shadow-elevated"
               asChild
             >
-              <a href="#agendar">Agendar Momento de Beleza</a>
+              <a href="https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7" target="_blank" rel="noopener noreferrer">Agendar seu Atendimento</a>
             </Button>
           </motion.div>
         </div>
