@@ -45,7 +45,7 @@ const CookieConsent = () => {
                                 size="sm"
                                 variant="outline"
                                 onClick={acceptCookies}
-                                className="flex-1 border-primary text-primary hover:bg-primary/5 h-8 text-xs"
+                                className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground h-8 text-xs transition-colors"
                             >
                                 Aceitar
                             </Button>
