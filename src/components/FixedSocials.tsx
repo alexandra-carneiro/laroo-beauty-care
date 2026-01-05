@@ -3,7 +3,7 @@ import { MessageCircle, Instagram } from "lucide-react";
 
 const FixedSocials = () => {
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <div className="fixed bottom-6 right-4 md:right-6 z-50 flex flex-col gap-3">
             {/* Instagram */}
             <motion.a
                 href="https://www.instagram.com/laroobeautycare/"
