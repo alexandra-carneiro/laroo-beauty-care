@@ -85,7 +85,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex flex-col bg-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-500 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+              className="group flex flex-col bg-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-shadow duration-500 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
             >
               <div className="aspect-[4/5] overflow-hidden w-full relative">
                 <img

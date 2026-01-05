@@ -12,7 +12,7 @@ const FixedSocials = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white text-pink-600 p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center border border-pink-100"
+                className="bg-white text-pink-600 p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-shadow duration-300 flex items-center justify-center border border-pink-100"
                 aria-label="Instagram"
             >
                 <Instagram className="w-6 h-6" />
@@ -26,7 +26,7 @@ const FixedSocials = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
                 whileHover={{ scale: 1.1 }}
-                className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+                className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center"
                 aria-label="WhatsApp"
             >
                 <svg

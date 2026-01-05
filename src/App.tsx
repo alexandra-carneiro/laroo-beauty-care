@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FixedSocials from "./components/FixedSocials";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <FixedSocials />
+        <CookieConsent />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
