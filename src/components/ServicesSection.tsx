@@ -53,7 +53,7 @@ const services = [
     title: "Epilação",
     description: "Laser e Cera.",
     price: "Desde 10€",
-    image: "/company-photos/services/service-laser.png"
+    image: "/company-photos/services/laser.jpeg"
   }
 ];
 
