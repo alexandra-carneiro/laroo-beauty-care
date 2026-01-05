@@ -91,15 +91,20 @@ const Footer = () => {
                 <span>@laroobeautycare</span>
               </a>
             </div>
-            <Button
-              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold rounded-full"
-              asChild
-            >
-              <a href="https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7" target="_blank" rel="noopener noreferrer">
-                Agende seu Atendimento
-              </a>
-            </Button>
           </motion.div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-12 flex justify-center">
+          <Button
+            size="lg"
+            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold rounded-full px-12 py-6 text-lg shadow-elevated"
+            asChild
+          >
+            <a href="https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7" target="_blank" rel="noopener noreferrer">
+              Agende seu Atendimento
+            </a>
+          </Button>
         </div>
 
         {/* Legal & Bottom */}
