@@ -5,6 +5,11 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+    Dialog,
+    DialogContent,
+    DialogTrigger,
+} from "@/components/ui/dialog";
 
 const photos = [
     { src: "/company-photos/portfolio/Galeria 1.jpeg", alt: "Trabalho de Unhas" },
@@ -23,6 +28,9 @@ const GallerySection = () => {
                     <p className="font-display text-3xl md:text-4xl italic text-terracotta mb-2">
                         Nosso Portfólio
                     </p>
+                    <p className="font-body text-sm text-muted-foreground">
+                        Clique na imagem para ampliar
+                    </p>
                 </div>
 
                 <div className="max-w-full px-4 md:px-12">
@@ -37,13 +45,24 @@ const GallerySection = () => {
                             {photos.map((photo, index) => (
                                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                     <div className="p-1">
-                                        <div className="overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-border/50">
-                                            <img
-                                                src={photo.src}
-                                                alt={photo.alt}
-                                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                                            />
-                                        </div>
+                                        <Dialog>
+                                            <DialogTrigger asChild>
+                                                <div className="overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-border/50 cursor-zoom-in group">
+                                                    <img
+                                                        src={photo.src}
+                                                        alt={photo.alt}
+                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    />
+                                                </div>
+                                            </DialogTrigger>
+                                            <DialogContent className="max-w-[95vw] max-h-[90vh] p-0 border-none bg-transparent shadow-none flex items-center justify-center">
+                                                <img
+                                                    src={photo.src}
+                                                    alt={photo.alt}
+                                                    className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                                                />
+                                            </DialogContent>
+                                        </Dialog>
                                     </div>
                                 </CarouselItem>
                             ))}
