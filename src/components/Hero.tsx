@@ -18,15 +18,15 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 py-16 md:py-24">
         <div className="max-w-xl">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-primary-foreground mb-5 animate-fade-up">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-primary-foreground mb-5">
             Realce sua Beleza Natural em Coimbra
           </h1>
 
-          <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8 animate-fade-up delay-100">
+          <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8">
             Especialistas em Unhas de Gel, Pestanas, Limpeza de Pele, Massagens e Epilação.
           </p>
 
-          <div className="animate-fade-up delay-200">
+          <div>
             <Button
               size="lg"
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold text-base px-8 py-6 rounded-full shadow-elevated"
