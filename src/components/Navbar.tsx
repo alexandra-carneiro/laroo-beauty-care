@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
             <img
-              src="/company-photos/logo fundo transparente.png"
+              src="/company-photos/logo-fundo-transparente.png"
               alt="Laroo Beauty & Care"
               className="h-8 w-auto rounded-full"
             />

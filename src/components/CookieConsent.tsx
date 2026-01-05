@@ -10,8 +10,19 @@ const CookieConsent = () => {
         // Checking if we are in a browser environment
         if (typeof window !== "undefined") {
             const consent = localStorage.getItem("laroo-cookie-consent");
-            // If consent is NOT "true", show the banner
-            if (consent !== "true") {
+
+            if (consent === "true") {
+                // If already accepted, grant consent to GA4
+                if ((window as any).gtag) {
+                    (window as any).gtag('consent', 'update', {
+                        'ad_storage': 'granted',
+                        'analytics_storage': 'granted',
+                        'ad_user_data': 'granted',
+                        'ad_personalization': 'granted'
+                    });
+                }
+            } else {
+                // If not accepted (or denied/null), show banner
                 setIsVisible(true);
             }
         }
@@ -20,6 +31,23 @@ const CookieConsent = () => {
     const acceptCookies = () => {
         localStorage.setItem("laroo-cookie-consent", "true");
         setIsVisible(false);
+
+        // Grant consent to GA4 on click
+        if (typeof window !== "undefined" && (window as any).gtag) {
+            (window as any).gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted'
+            });
+        }
+    };
+
+    const declineCookies = () => {
+        // User explicitly declined or dismissed
+        localStorage.setItem("laroo-cookie-consent", "false");
+        setIsVisible(false);
+        // We do NOT update gtag consent, so it remains 'denied' (default)
     };
 
     return (
@@ -49,9 +77,17 @@ const CookieConsent = () => {
                             >
                                 Aceitar
                             </Button>
+                            <Button
+                                size="sm"
+                                variant="outline"
+                                onClick={declineCookies}
+                                className="flex-1 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground h-8 text-xs transition-colors"
+                            >
+                                Recusar
+                            </Button>
                             <button
-                                onClick={acceptCookies}
-                                className="p-1.5 text-muted-foreground hover:text-foreground transition-colors"
+                                onClick={declineCookies}
+                                className="p-1.5 text-muted-foreground hover:text-foreground transition-colors absolute top-2 right-2 md:static md:top-auto md:right-auto"
                                 aria-label="Fechar"
                             >
                                 <X className="w-4 h-4" />
