@@ -11,35 +11,49 @@ const services = [
     title: "Unhas em Gel",
     description: "Manicure, Gelinho e Nail Art.",
     price: "Desde 15€",
-    image: "/company-photos/unhas 1.jpeg"
+    image: "/company-photos/services/Unhas.jpeg"
+  },
+  {
+    id: "sobrancelhas",
+    title: "Design de Sobrancelhas",
+    description: "Design, Henna e Brow Lamination.",
+    price: "Desde 10,50€",
+    image: "/company-photos/services/Sobrancelhas.jpeg"
   },
   {
     id: "pestanas",
     title: "Pestanas",
     description: "Lifting e Extensão Natural.",
-    price: "Desde 25€",
-    image: "/company-photos/pestanas 1.jpeg"
+    price: "Desde 35€",
+    image: "/company-photos/services/pestanas 1.jpeg"
   },
   {
     id: "facial",
     title: "Facial",
     description: "Limpeza e Hidratação Profunda.",
-    price: "Desde 40€",
-    image: "/company-photos/service-facial-real.png"
+    price: "Desde 45€",
+    image: "/company-photos/services/Limpeza de Pele.jpeg"
   },
   {
     id: "massagens",
     title: "Massagens",
     description: "Relaxantes e Terapêuticas.",
-    price: "Desde 35€",
-    image: "/company-photos/service-massage-new.png"
+    price: "Desde 20€",
+    image: "/company-photos/services/Massagem.jpeg"
+  },
+  {
+    id: "spa-pes",
+    title: "Spa dos Pés",
+    description: "Relaxamento e Cuidado.",
+    price: "15€",
+    image: "/company-photos/services/spa dos pes.jpeg"
   },
   {
     id: "laser",
-    title: "Epilação a Laser",
-    description: "Tecnologia eficaz e segura.",
-    price: "Desde 30€",
-    image: "/company-photos/service-laser.png"
+    title: "Epilação",
+    description: "Laser e Cera.",
+    price: "Desde 10€",
+    image: "/company-photos/services/service-laser.png"
   }
 ];
 
@@ -63,7 +77,7 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 items-start">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 items-stretch">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
@@ -71,7 +85,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex flex-col bg-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-500 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] xl:w-[calc(20%-1.5rem)]"
+              className="group flex flex-col bg-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-elevated transition-all duration-500 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
             >
               <div className="aspect-[4/5] overflow-hidden w-full relative">
                 <img

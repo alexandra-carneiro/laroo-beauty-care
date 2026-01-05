@@ -7,11 +7,12 @@ import {
 } from "@/components/ui/carousel";
 
 const photos = [
-    { src: "/company-photos/unhas 1.jpeg", alt: "Trabalho de Unhas 1" },
-    { src: "/company-photos/unhas 2.jpeg", alt: "Trabalho de Unhas 2" },
-    { src: "/company-photos/detalhes loja 1.jpeg", alt: "Detalhes do Espaço" },
-    { src: "/company-photos/pestanas 1.jpeg", alt: "Trabalho de Pestanas" },
-    { src: "/company-photos/frente de loja.jpeg", alt: "Frente da Loja" },
+    { src: "/company-photos/portfolio/Galeria 1.jpeg", alt: "Trabalho de Unhas" },
+    { src: "/company-photos/portfolio/Galeria 2.jpeg", alt: "Trabalho de Unhas Detalhe" },
+    { src: "/company-photos/portfolio/Galeria 3.jpeg", alt: "Ambiente" },
+    { src: "/company-photos/portfolio/detalhes loja 1.jpeg", alt: "Detalhes do Espaço" },
+    { src: "/company-photos/portfolio/pestanas 1.jpeg", alt: "Trabalho de Pestanas" },
+    { src: "/company-photos/portfolio/frente de loja.jpeg", alt: "Frente da Loja" },
 ];
 
 const GallerySection = () => {

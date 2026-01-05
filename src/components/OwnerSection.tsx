@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const OwnerSection = () => {
     return (
-        <section className="bg-sand min-h-[calc(100svh-5rem)] flex flex-col justify-start pt-10 pb-16 md:pt-12 md:pb-20">
+        <section className="bg-sand min-h-[calc(100svh-5rem)] flex flex-col justify-center py-12 md:py-24">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <motion.div
