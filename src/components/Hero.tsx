@@ -1,10 +1,21 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-spa.webp";
 
 const Hero = () => {
+  const [viewportHeight, setViewportHeight] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Set viewport height once on mount - won't recalculate during scroll
+    setViewportHeight(window.innerHeight);
+  }, []);
+
   return (
-    <section className="relative min-h-[800px] md:min-h-screen flex items-center pt-16 touch-pan-y">
+    <section
+      className="relative flex items-center pt-16 touch-pan-y"
+      style={{ minHeight: viewportHeight ? `${viewportHeight}px` : '800px' }}
+    >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
