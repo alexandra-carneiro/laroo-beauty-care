@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-spa.webp";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-svh flex items-center pt-16 touch-pan-y">
+    <section className="relative min-h-[800px] md:min-h-screen flex items-center pt-16 touch-pan-y">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
