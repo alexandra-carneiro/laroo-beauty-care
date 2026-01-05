@@ -23,13 +23,10 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-soft py-3"
-          : "bg-transparent py-2"
+          : "bg-transparent py-3"
           }`}
       >
         <div className="container flex items-center justify-between">
@@ -82,7 +79,7 @@ const Navbar = () => {
             )}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>
