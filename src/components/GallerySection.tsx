@@ -69,8 +69,8 @@ const GallerySection = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        <CarouselPrevious className="left-2 md:-left-12 bg-white/80 hover:bg-white border-none shadow-md backdrop-blur-sm" />
+                        <CarouselNext className="right-2 md:-right-12 bg-white/80 hover:bg-white border-none shadow-md backdrop-blur-sm" />
                     </Carousel>
 
                     <Dialog open={!!selectedPhoto} onOpenChange={(open) => !open && handleClose()}>
