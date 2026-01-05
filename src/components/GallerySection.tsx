@@ -9,7 +9,9 @@ import {
     Dialog,
     DialogContent,
     DialogTrigger,
+    DialogClose,
 } from "@/components/ui/dialog";
+import { X } from "lucide-react";
 
 const photos = [
     { src: "/company-photos/portfolio/Galeria 1.jpeg", alt: "Trabalho de Unhas" },
@@ -47,15 +49,18 @@ const GallerySection = () => {
                                     <div className="p-1">
                                         <Dialog>
                                             <DialogTrigger asChild>
-                                                <div className="overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-border/50 cursor-zoom-in group">
+                                                <button className="w-full overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-border/50 cursor-zoom-in group relative outline-none focus:ring-2 focus:ring-primary/50">
                                                     <img
                                                         src={photo.src}
                                                         alt={photo.alt}
                                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                                     />
-                                                </div>
+                                                </button>
                                             </DialogTrigger>
-                                            <DialogContent className="max-w-[95vw] max-h-[90vh] p-0 border-none bg-transparent shadow-none flex items-center justify-center">
+                                            <DialogContent className="max-w-[95vw] max-h-[90vh] p-0 border-none bg-transparent shadow-none flex items-center justify-center relative">
+                                                <DialogClose className="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors border-none outline-none focus:ring-0">
+                                                    <X className="w-6 h-6" />
+                                                </DialogClose>
                                                 <img
                                                     src={photo.src}
                                                     alt={photo.alt}
