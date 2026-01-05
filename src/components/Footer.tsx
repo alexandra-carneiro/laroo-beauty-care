@@ -98,8 +98,8 @@ const Footer = () => {
             <a href="/politica-privacidade" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a>
             <a href="/termos-condicoes" className="hover:text-primary-foreground transition-colors">Termos e Condições</a>
           </div>
-          <p className="font-body text-sm text-primary-foreground/60">
-            © 2025 Laroo Beauty & Care. Design by Avante Digital.
+          <p className="text-xs text-primary-foreground/60">
+            © {new Date().getFullYear()} Laroo Beauty & Care. Todos os direitos reservados. v1.1
           </p>
         </div>
       </div>
