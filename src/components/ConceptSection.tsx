@@ -16,9 +16,9 @@ const ConceptSection = () => {
           >
             <div className="aspect-[4/5] max-w-sm mx-auto overflow-hidden rounded-3xl shadow-elevated">
               <img
-                src="/company-photos/concept-spa.png"
-                alt="Ambiente Relaxante Laroo"
-                className="w-full h-full object-cover"
+                src="/company-photos/concept-spa.webp"
+                alt="Momento de relaxamento spa"
+                className="w-full h-full object-cover relative z-10"
               />
             </div>
             {/* Decorative element */}
