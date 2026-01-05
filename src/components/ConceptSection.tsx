@@ -41,10 +41,6 @@ const ConceptSection = () => {
               No Laroo, acreditamos que a beleza não deve ser uma obrigação, mas sim um prazer.
             </p>
 
-            <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8 animate-fade-up delay-100">
-              Queremos que se sinta em casa. Venha conhecer o nosso espaço e desfrutar de um café enquanto cuidamos de si.
-            </p>
-
             <p className="font-body text-muted-foreground leading-relaxed mb-10">
               Criamos um espaço em Coimbra onde o tempo desacelera. Liderado por Laryssa, utilizamos apenas produtos hipoalergénicos e técnicas manuais que respeitam a integridade da sua pele e unhas.
             </p>

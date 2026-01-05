@@ -38,17 +38,12 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
-      >
+      {/* Scroll Hint */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
         <div className="animate-bounce w-5 h-8 border-2 border-primary-foreground/40 rounded-full flex justify-center">
           <div className="w-1 h-2 bg-primary-foreground/60 rounded-full mt-1.5" />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

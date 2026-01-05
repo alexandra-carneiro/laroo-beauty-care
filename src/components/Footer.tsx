@@ -18,7 +18,7 @@ const Footer = () => {
             Estamos à sua espera.
           </h2>
           <p className="font-body text-primary-foreground/80 max-w-md mx-auto">
-            Venha conhecer o nosso espaço e desfrutar de um chá enquanto cuidamos de si.
+            Venha conhecer o nosso espaço e desfrutar de um café enquanto cuidamos de si.
           </p>
         </motion.div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
             <a href="/termos-condicoes" className="hover:text-primary-foreground transition-colors">Termos e Condições</a>
           </div>
           <p className="text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} Laroo Beauty & Care. Todos os direitos reservados. v1.1
+            © {new Date().getFullYear()} Laroo Beauty & Care. Todos os direitos reservados.
           </p>
         </div>
       </div>
