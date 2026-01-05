@@ -18,29 +18,15 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 py-16 md:py-24">
         <div className="max-w-xl">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-primary-foreground mb-5"
-          >
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-primary-foreground mb-5 animate-fade-up">
             Realce sua Beleza Natural em Coimbra
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8"
-          >
+          <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8 animate-fade-up delay-100">
             Especialistas em Unhas de Gel, Pestanas, Limpeza de Pele, Massagens e Epilação.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
+          <div className="animate-fade-up delay-200">
             <Button
               size="lg"
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold text-base px-8 py-6 rounded-full shadow-elevated"
@@ -48,7 +34,7 @@ const Hero = () => {
             >
               <a href="https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7" target="_blank" rel="noopener noreferrer">Agendar seu Atendimento</a>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </div>
 
