@@ -23,7 +23,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <FixedSocials />
-        <CookieConsent />
+
 
         {/* Skip to main content link for accessibility */}
         <a
@@ -34,6 +34,7 @@ const App = () => (
         </a>
 
         <BrowserRouter>
+          <CookieConsent />
           <Suspense fallback={<div className="min-h-screen bg-sand flex items-center justify-center"><div className="w-10 h-10 border-4 border-terracotta/30 border-t-terracotta rounded-full animate-spin"></div></div>}>
             <Routes>
               <Route path="/" element={<Index />} />

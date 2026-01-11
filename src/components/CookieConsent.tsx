@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CookieConsent = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -70,9 +71,9 @@ const CookieConsent = () => {
                             </h3>
                             <p className="font-body text-xs text-muted-foreground leading-relaxed">
                                 Utilizamos cookies para melhorar a sua experiência. Ao continuar, aceita a nossa{" "}
-                                <a href="/politica-privacidade" className="text-primary hover:underline font-medium">
+                                <Link to="/politica-privacidade" className="text-primary hover:underline font-medium">
                                     Política de Privacidade
-                                </a>.
+                                </Link>.
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
