@@ -14,7 +14,7 @@ const ConceptSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-[4/5] max-w-sm mx-auto overflow-hidden rounded-3xl shadow-elevated">
+            <div className="aspect-square md:aspect-[4/5] max-w-[75%] md:max-w-sm mx-auto overflow-hidden rounded-3xl shadow-elevated">
               <img
                 src="/company-photos/concept-spa.webp"
                 alt="Momento de relaxamento spa"

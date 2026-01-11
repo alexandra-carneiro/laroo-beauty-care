@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="flex-grow flex flex-col justify-center items-center w-full pt-0 pb-4 md:pb-20 mt-4 md:mt-0 text-center">
+        <div className="flex-grow flex flex-col justify-center items-center w-full pt-0 pb-4 md:pb-20 mt-8 md:mt-0 text-center">
           <Button
             size="lg"
             className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold rounded-full px-12 py-6 text-lg shadow-elevated"
@@ -136,7 +136,7 @@ const Footer = () => {
         </div>
 
         {/* Legal & Bottom */}
-        <div className="container relative md:absolute md:bottom-0 left-0 right-0 border-t border-primary-foreground/20 text-center space-y-2 pt-4 pb-4 md:pb-1 mt-8 md:mt-0">
+        <div className="container relative md:absolute md:bottom-0 left-0 right-0 border-t border-primary-foreground/20 text-center space-y-2 pt-4 pb-4 md:pb-1 mt-4 md:mt-0">
           <div className="flex flex-col md:flex-row justify-center items-center gap-3 text-xs text-primary-foreground/50">
             <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
               Livro de Reclamações Eletrónico
