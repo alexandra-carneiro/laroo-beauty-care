@@ -12,14 +12,7 @@ import {
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 
-const photos = [
-    { src: "/company-photos/portfolio/Galeria 1.jpeg", alt: "Trabalho de Unhas" },
-    { src: "/company-photos/portfolio/Galeria 2.jpeg", alt: "Trabalho de Unhas Detalhe" },
-    { src: "/company-photos/portfolio/Galeria 3.jpeg", alt: "Ambiente" },
-    { src: "/company-photos/portfolio/detalhes loja 1.jpeg", alt: "Detalhes do Espaço" },
-    { src: "/company-photos/portfolio/pestanas 1.jpeg", alt: "Trabalho de Pestanas" },
-    { src: "/company-photos/portfolio/frente de loja.jpeg", alt: "Frente da Loja" },
-];
+import { galleryPhotos as photos } from "@/data";
 
 const GallerySection = () => {
     const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
@@ -62,6 +55,7 @@ const GallerySection = () => {
                                             <img
                                                 src={photo.src}
                                                 alt={photo.alt}
+                                                loading="lazy"
                                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                             />
                                         </button>

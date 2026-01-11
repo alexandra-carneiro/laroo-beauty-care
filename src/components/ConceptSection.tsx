@@ -18,6 +18,7 @@ const ConceptSection = () => {
               <img
                 src="/company-photos/concept-spa.webp"
                 alt="Momento de relaxamento spa"
+                loading="lazy"
                 className="w-full h-full object-cover relative z-10"
               />
             </div>

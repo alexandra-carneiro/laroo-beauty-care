@@ -13,8 +13,8 @@ const CookieConsent = () => {
 
             if (consent === "true") {
                 // If already accepted, grant consent to GA4
-                if ((window as any).gtag) {
-                    (window as any).gtag('consent', 'update', {
+                if (window.gtag) {
+                    window.gtag('consent', 'update', {
                         'ad_storage': 'granted',
                         'analytics_storage': 'granted',
                         'ad_user_data': 'granted',
@@ -33,8 +33,8 @@ const CookieConsent = () => {
         setIsVisible(false);
 
         // Grant consent to GA4 on click
-        if (typeof window !== "undefined" && (window as any).gtag) {
-            (window as any).gtag('consent', 'update', {
+        if (typeof window !== "undefined" && window.gtag) {
+            window.gtag('consent', 'update', {
                 'ad_storage': 'granted',
                 'analytics_storage': 'granted',
                 'ad_user_data': 'granted',

@@ -16,6 +16,7 @@ const OwnerSection = () => {
                             <img
                                 src="/company-photos/proprietaria laryssa.jpeg"
                                 alt="Laryssa - Especialista Laroo Beauty Care"
+                                loading="lazy"
                                 className="w-full h-full object-cover"
                             />
                         </div>
