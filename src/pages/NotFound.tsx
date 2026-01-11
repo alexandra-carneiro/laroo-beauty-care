@@ -25,15 +25,27 @@ const NotFound = () => {
               Página não Encontrada
             </h1>
             <p className="font-body text-lg text-muted-foreground mb-8">
-              A página que procura não existe ou foi movida. Vamos ajudá-la a encontrar o caminho de volta para os nossos cuidados.
+              O caminho para o relaxamento pode ter mudado. Escolha um novo destino:
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-body font-medium rounded-full px-8 shadow-lg hover:shadow-xl transition-all"
-            >
-              <a href="/">Voltar ao Início</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-full px-8 border-terracotta text-terracotta hover:bg-terracotta hover:text-white transition-all font-body"
+              >
+                <a href="/">Voltar ao Início</a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-body font-medium rounded-full px-8 shadow-lg hover:shadow-xl transition-all"
+              >
+                <a href="https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7" target="_blank" rel="noopener noreferrer">
+                  Agendar Agora
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

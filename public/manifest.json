@@ -1,0 +1,16 @@
+{
+    "name": "Laroo Beauty Care",
+    "short_name": "Laroo",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FDFBF7",
+    "theme_color": "#FDFBF7",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/company-photos/logo-fundo-transparente.png",
+            "sizes": "192x192 512x512",
+            "type": "image/png"
+        }
+    ]
+}
