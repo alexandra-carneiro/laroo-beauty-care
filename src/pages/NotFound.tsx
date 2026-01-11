@@ -17,10 +17,10 @@ const NotFound = () => {
 
       <div className="flex-grow flex items-center justify-center py-24 px-6 md:px-12">
         <div className="text-center max-w-lg">
-          <p className="font-display text-Terrakotta text-9xl font-medium opacity-20 select-none">
+          <p className="font-display text-terracotta text-6xl md:text-8xl font-bold mb-4 select-none">
             404
           </p>
-          <div className="-mt-12 relative z-10">
+          <div className="relative z-10">
             <h1 className="font-display text-4xl md:text-5xl text-foreground mb-6">
               Página não Encontrada
             </h1>
