@@ -36,10 +36,10 @@ const GallerySection = () => {
                     </p>
                 </div>
 
-                <div className="max-w-full px-4 md:px-12">
+                <div className="max-w-full px-0 md:px-12">
                     <Carousel
                         opts={{
-                            align: "start",
+                            align: "center",
                             loop: true,
                         }}
                         className="w-full"
