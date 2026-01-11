@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://laroo-beauty-care.vercel.app/sitemap.xml
