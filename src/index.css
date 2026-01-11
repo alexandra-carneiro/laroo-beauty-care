@@ -130,8 +130,6 @@
   }
 
   html {
-    scroll-padding-top: 2rem;
-    /* Reduced to prevent showing Hero section gap */
     /* scroll-behavior: smooth; - Removed to prevent iOS scroll locking/stutter */
   }
 
