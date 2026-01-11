@@ -120,11 +120,11 @@ Instale a extensão "Live Server".
 
 Clique em "Go Live" no canto inferior direito para ver as alterações em tempo real.
 
-🧠 Engenharia de Prompt (AI Generation)
+## Prompt Context (For AI Tools)
 
-Para replicar ou expandir este design utilizando ferramentas de IA (como Lovable, v0 ou Readdy), utilize o seguinte contexto de prompt:
+Para replicar ou expandir este design utilizando ferramentas de IA, utilize o seguinte contexto de prompt:
 
-"Crie uma landing page estilo 'Lovable' para um estúdio de estética. Use um layout 'Split Hero' no topo. A paleta de cores deve ser Verde Musgo (#4A5240) e Terracota (#AD8A72) sobre um fundo Off-White (#F7F5F0). Priorize uma grid de serviços com fotos logo após o Hero. A tipografia deve misturar Playfair Display (títulos) com Inter (texto)."
+"Crie uma landing page moderna para um estúdio de estética. Use um layout 'Split Hero' no topo. A paleta de cores deve ser Verde Musgo (#4A5240) e Terracota (#AD8A72) sobre um fundo Off-White (#F7F5F0). Priorize uma grid de serviços com fotos logo após o Hero. A tipografia deve misturar Playfair Display (títulos) com Inter (texto)."
 
 📄 Licença
 
