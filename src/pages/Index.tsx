@@ -43,7 +43,11 @@ const Index = () => {
             },
             "priceRange": "€-€€",
             "telephone": "+351910248906",
-            "openingHours": "Tu-Sa 09:00-19:00"
+            "openingHours": "Tu-Sa 09:00-19:00",
+            "sameAs": [
+              "https://www.instagram.com/laroobeautycare/",
+              "https://www.fresha.com/pt/a/laroo-beauty-care-coimbra-rua-armando-de-sousa-p12mk4t7"
+            ]
           })}
         </script>
       </Helmet>

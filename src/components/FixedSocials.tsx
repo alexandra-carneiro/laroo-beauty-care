@@ -19,7 +19,7 @@ const FixedSocials = () => {
             </motion.a>
 
             <motion.a
-                href="https://wa.link/0as086"
+                href="https://wa.me/351910248906?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20servi%C3%A7os."
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.8 }}

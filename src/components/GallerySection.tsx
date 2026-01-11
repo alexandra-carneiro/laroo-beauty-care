@@ -25,11 +25,11 @@ const GallerySection = () => {
     };
 
     return (
-        <section className="bg-background min-h-[calc(100svh-5rem)] flex flex-col justify-start pt-10 pb-16 md:pt-12 md:pb-20">
+        <section className="bg-background min-h-[calc(100svh-4rem)] flex flex-col justify-center py-4 md:py-8">
             <div className="container">
-                <div className="text-center mb-6">
+                <div className="text-center mb-4">
                     <p className="font-display text-3xl md:text-4xl italic text-terracotta mb-2">
-                        Nosso Portfólio
+                        A Nossa Galeria
                     </p>
                     <p className="font-body text-sm text-muted-foreground">
                         Clique na imagem para ampliar

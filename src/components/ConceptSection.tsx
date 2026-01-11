@@ -3,7 +3,7 @@ import { Leaf, Clock } from "lucide-react";
 
 const ConceptSection = () => {
   return (
-    <section className="bg-background min-h-[calc(100svh-5rem)] flex flex-col justify-center py-12 md:py-24">
+    <section className="bg-background min-h-[calc(100svh-4rem)] flex flex-col justify-center py-12 md:py-24">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
