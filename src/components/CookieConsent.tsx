@@ -56,8 +56,15 @@ const CookieConsent = () => {
                 <motion.div
                     className="fixed bottom-4 left-4 z-[100] w-[calc(100%-2rem)] md:w-auto md:max-w-sm"
                 >
-                    <div className="bg-white/95 backdrop-blur-md border border-border/50 shadow-2xl rounded-xl p-4 flex flex-col gap-3">
-                        <div className="space-y-1">
+                    <div className="bg-white/95 backdrop-blur-md border border-border/50 shadow-2xl rounded-xl p-4 flex flex-col gap-3 relative">
+                        <button
+                            onClick={declineCookies}
+                            className="p-1.5 text-muted-foreground hover:text-foreground transition-colors absolute top-2 right-2"
+                            aria-label="Fechar"
+                        >
+                            <X className="w-4 h-4" />
+                        </button>
+                        <div className="space-y-1 pr-6">
                             <h3 className="font-display text-base text-foreground">
                                 Privacidade
                             </h3>
@@ -85,13 +92,6 @@ const CookieConsent = () => {
                             >
                                 Recusar
                             </Button>
-                            <button
-                                onClick={declineCookies}
-                                className="p-1.5 text-muted-foreground hover:text-foreground transition-colors absolute top-2 right-2 md:static md:top-auto md:right-auto"
-                                aria-label="Fechar"
-                            >
-                                <X className="w-4 h-4" />
-                            </button>
                         </div>
                     </div>
                 </motion.div>
