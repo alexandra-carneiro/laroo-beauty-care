@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="flex-grow flex flex-col justify-center items-center w-full pt-0 pb-8 md:pb-20 mt-12 md:mt-0 text-center">
+        <div className="flex-grow flex flex-col justify-center items-center w-full pt-0 pb-4 md:pb-20 mt-4 md:mt-0 text-center">
           <Button
             size="lg"
             className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-semibold rounded-full px-12 py-6 text-lg shadow-elevated"

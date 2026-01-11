@@ -27,7 +27,7 @@ const GallerySection = () => {
     return (
         <section className="bg-background min-h-[calc(100svh-4rem)] flex flex-col justify-center py-4 md:py-8">
             <div className="container">
-                <div className="text-center mb-4">
+                <div className="text-center mb-2 px-4">
                     <p className="font-display text-3xl md:text-4xl italic text-terracotta mb-2">
                         A Nossa Galeria
                     </p>
@@ -50,7 +50,7 @@ const GallerySection = () => {
                                     <div className="p-1">
                                         <button
                                             onClick={() => setSelectedPhoto(photo)}
-                                            className="w-full overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-border/50 cursor-zoom-in group relative outline-none focus:ring-2 focus:ring-primary/50"
+                                            className="w-full overflow-hidden rounded-none md:rounded-2xl aspect-[3/5] md:aspect-[3/4] shadow-md border-y border-border/50 md:border md:border-border/50 cursor-zoom-in group relative outline-none focus:ring-2 focus:ring-primary/50"
                                         >
                                             <img
                                                 src={photo.src}

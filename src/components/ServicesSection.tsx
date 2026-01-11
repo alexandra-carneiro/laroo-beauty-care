@@ -6,7 +6,7 @@ import { services } from "@/data";
 
 const ServicesSection = () => {
   return (
-    <section id="servicos" className="bg-sand min-h-[calc(100svh-5rem)] flex flex-col justify-center py-12 md:py-16">
+    <section id="servicos" className="bg-sand min-h-[calc(100svh-5rem)] flex flex-col justify-center py-6 md:py-10">
       <div className="container flex flex-col justify-center h-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
