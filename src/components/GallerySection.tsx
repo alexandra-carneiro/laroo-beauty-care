@@ -25,9 +25,9 @@ const GallerySection = () => {
     };
 
     return (
-        <section className="bg-background min-h-[calc(100svh-4rem)] flex flex-col justify-center py-4 md:py-8">
+        <section className="bg-background min-h-[calc(100svh-4rem)] flex flex-col justify-center py-4 md:py-20">
             <div className="container">
-                <div className="text-center mb-2 px-4">
+                <div className="text-center mb-2 md:mb-8 px-4">
                     <p className="font-display text-3xl md:text-4xl italic text-terracotta mb-2">
                         A Nossa Galeria
                     </p>

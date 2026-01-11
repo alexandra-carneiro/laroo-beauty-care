@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, ExternalLink, Clock, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -147,8 +148,8 @@ const Footer = () => {
             </span>
           </div>
           <div className="flex justify-center gap-4 text-xs text-primary-foreground/50">
-            <a href="/politica-privacidade" className="hover:text-primary-foreground transition-colors">Política de Privacidade</a>
-            <a href="/termos-condicoes" className="hover:text-primary-foreground transition-colors">Termos e Condições</a>
+            <Link to="/politica-privacidade" className="hover:text-primary-foreground transition-colors">Política de Privacidade</Link>
+            <Link to="/termos-condicoes" className="hover:text-primary-foreground transition-colors">Termos e Condições</Link>
           </div>
           <p className="text-[10px] text-primary-foreground/40 leading-none">
             © {currentYear} Laroo Beauty & Care. Todos os direitos reservados.
