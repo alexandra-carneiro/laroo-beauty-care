@@ -1,135 +1,156 @@
-🌿 Laroo Beauty & Care - Landing Page
+<div align="center">
 
-"Beleza natural, experiência sensorial."
+# 🌿 Laroo Beauty & Care
 
-Este projeto é uma Landing Page de alta conversão desenvolvida para o estúdio de estética Laroo Beauty & Care, localizado em Coimbra, Portugal. O design combina a elegância minimalista de um spa com uma arquitetura de informação focada em vendas e agendamento de serviços.
+**Website Institucional & Plataforma de Agendamentos**
 
-🎯 Objetivo do Projeto
+*"Beleza natural, experiência sensorial."*
 
-O principal desafio deste projeto foi equilibrar o Branding (Conceito/Vibe) com a Conversão (Venda).
+[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite_5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://laroo-beauty-care.vercel.app/)
 
-Diferente de templates genéricos, esta página foi desenhada para:
+<p align="center">
+  <a href="https://laroo-beauty-care.vercel.app/" target="_blank"><strong>🌐 Visitar Website Oficial</strong></a> •
+  <a href="https://alexandracarneiro.tech/" target="_blank"><strong>💼 Portfólio da Desenvolvedora</strong></a>
+</p>
 
-Vitrine Imediata: Expor os serviços (Unhas, Pestanas, Facial, Massagem) logo na primeira dobra.
+</div>
 
-Identidade Visual: Utilizar a paleta de cores exata da marca (extraída do Instagram).
+---
 
-Experiência do Utilizador: Navegação fluida, botões claros e design responsivo (Mobile-First).
+## 📖 Sobre o Projeto
 
-🎨 Identidade Visual & Design System
+O **Laroo Beauty & Care** é um espaço de estética e bem-estar localizado em **Coimbra, Portugal**, dedicado a tratamentos de alto padrão em unhas, pestanas, cuidados faciais e terapias corporais.
 
-A estética foi baseada no arquétipo do "Cuidador" e "Inocente", transmitindo pureza, natureza e sofisticação.
+Este projeto consistiu no desenvolvimento sob medida de uma aplicação web institucional focada em **alta conversão**, desenhada para valorizar a identidade visual da marca, apresentar o portfólio de serviços de forma sensorial e descomplicar a jornada de agendamento de clientes através de canais diretos (WhatsApp).
 
-Paleta de Cores (Hex Codes Oficiais)
+### 💡 Destaques do Desenvolvimento:
+- **Engenharia com Apoio de IA:** Aceleração de rotinas de codificação, refinamento de componentes reutilizáveis e otimizações avançadas de SEO e performance.
+- **Validação com a Proprietária:** Ciclos contínuos de alinhamento estético, tipografia, tom de voz e cartela de cores diretamente com a proprietária do estúdio.
+- **Arquitetura Moderna & Escalável:** Construído com React, TypeScript e Tailwind CSS, integrado a um pipeline de CI/CD automatizado na plataforma Vercel.
 
-Cor
+---
 
-Hex
+## 📸 Demonstração Visual
 
-Uso Principal
+<div align="center">
 
-Verde Musgo Profundo
+### 💻 Versão Desktop
+<img src="screenshots/desktop-preview.png" width="800" alt="Laroo Beauty Care - Desktop Showcase" style="border-radius: 8px; border: 1px solid #4A5240;" />
 
-#4A5240
+### 📱 Versão Mobile Responsiva
+<img src="screenshots/mobile-preview.png" width="300" alt="Laroo Beauty Care - Mobile Showcase" style="border-radius: 8px; border: 1px solid #4A5240;" />
 
-Títulos, Botões Primários, Rodapé
+</div>
 
-Terracota Aveludado
+---
 
-#AD8A72
+## 🎨 Identidade Visual & Design System
 
-Destaques, Ícones, Hover, Badges
+A estética do projeto foi concebida para transmitir calma, pureza, sofisticação e conexão com a natureza:
 
-Bege Areia / Pedra
+### 🎨 Paleta de Cores Oficial
 
-#D9CFC4
+| Cor | Código Hex | Uso Principal |
+| :--- | :--- | :--- |
+| **Verde Musgo Profundo** | \`#4A5240\` | Títulos principais, botões primários, rodapé e acentos estruturais |
+| **Terracota Aveludado** | \`#AD8A72\` | Destaques sutis, ícones, estados de hover e badges |
+| **Bege Areia / Pedra** | \`#D9CFC4\` | Divisórias, bordas de cards e elementos neutros |
+| **Off-White / Creme** | \`#F7F5F0\` | Fundo principal da página (proporciona leitura calorosa e suave) |
+| **Branco Puro** | \`#FFFFFF\` | Superfícies de cards e caixas de leitura |
 
-Fundos de Seção, Elementos Neutros
+### ✍️ Tipografia
+- **Títulos & Headlines:** *Playfair Display* (Serifada) — confere elegância atemporal e sofisticação editorial.
+- **Corpo & Navegação:** *Inter* (Sans-serif) — garante máxima legibilidade, clareza e ritmo moderno em qualquer dispositivo.
 
-Off-White / Creme
+---
 
-#F7F5F0
+## 🛠️ Stack Tecnológica
 
-Fundo Principal (Background)
+| Camada | Tecnologias Utilizadas |
+| :--- | :--- |
+| **Core & Framework** | [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite (SWC)](https://vitejs.dev/) |
+| **Estilização & UI** | [Tailwind CSS](https://tailwindcss.com/), Radix UI Primitives, Lucide React, Framer Motion |
+| **Formulários & Dados** | React Hook Form, Zod, TanStack React Query |
+| **Performance & SEO** | Vite Plugin Image Optimizer (Sharp), React Helmet Async, Sitemap e Metatags Open Graph |
+| **Hospedagem & CI/CD** | [Vercel](https://vercel.com/) (Deploy contínuo acionado a cada push no Git) |
+| **Privacidade & Métricas** | Google Analytics com Cookie Banner integrado em conformidade com o **RGPD** |
 
-Branco Puro
+---
 
-#FFFFFF
+## 💎 Funcionalidades Principais
 
-Cards e Superfícies de Leitura
+- **✨ Vitrine Visual de Serviços:** Apresentação clara de procedimentos (Unhas de Gel, Extensão de Pestanas, Limpeza de Pele, Massagens Relaxantes) com valores-base para qualificação de leads.
+- **📲 Conversão Direta via WhatsApp:** Chamadas para ação (CTA) inteligentes que abrem o canal de contato do estúdio com mensagens pré-formatadas para o serviço desejado.
+- **🎯 Sticky Navbar com Glassmorphism:** Barra de navegação fixa com efeito translúcido para acesso instantâneo a menus, localização e botão de reserva.
+- **🍪 Banner de Cookies (RGPD):** Gerenciamento ético de consentimento para ativação de scripts analíticos.
+- **📱 Responsividade Impecável:** Interface com foco *Mobile-First*, garantindo experiência tátil agradável em smartphones, tablets e desktops.
 
-Tipografia
+---
 
-Títulos (Serifa): Playfair Display - Para elegância e sofisticação.
+## 📂 Estrutura de Diretórios
 
-Corpo (Sans): Inter ou Manrope - Para legibilidade moderna e limpa.
-
-⚡ Tecnologias Utilizadas
-
-HTML5 Semântico: Estrutura otimizada para SEO.
-
-Tailwind CSS (CDN): Estilização rápida, responsiva e moderna.
-
-Google Fonts: Tipografia web otimizada.
-
-Design Pattern: "Split Hero" (Texto à esquerda, Imagem à direita) inspirado no estilo Lovable.
-
-🏗️ Estrutura da Página
-
-Navbar Sticky: Menu fixo com efeito glassmorphism (vidro fosco) para acesso rápido ao agendamento.
-
-Hero Section (Split):
-
-Headline focada em benefício ("Beleza natural").
-
-Imagem de alta qualidade com bordas arredondadas.
-
-Badge "Novo em Coimbra" para gatilho de novidade.
-
-Menu de Serviços (Grid):
-
-4 Cards principais com fotos reais (não ícones).
-
-Preço base ("Desde X€") visível para qualificar o lead.
-
-Botão "Agendar" direto no card.
-
-Conceito (Sobre): Breve explicação da filosofia da marca (produtos cruelty-free, ambiente calmo).
-
-Prova Social: Depoimentos de clientes reais em cards elegantes.
-
-Rodapé: Informações locais (Morada em Coimbra), Mapa e Contactos rápidos.
-
-🚀 Como Executar
-
-Este é um projeto estático, o que significa que não requer instalação complexa de dependências (Node.js, NPM, etc.) para visualização.
-
-Opção 1: Visualização Rápida
-
-Faça o download do ficheiro index.html.
-
-Clique duas vezes para abrir no seu navegador (Chrome, Safari, Edge).
-
-Opção 2: Edição (VS Code)
-
-Clone este repositório ou baixe os ficheiros.
-
-Abra a pasta no VS Code.
-
-Instale a extensão "Live Server".
-
-Clique em "Go Live" no canto inferior direito para ver as alterações em tempo real.
-
-## Prompt Context (For AI Tools)
-
-Para replicar ou expandir este design utilizando ferramentas de IA, utilize o seguinte contexto de prompt:
-
-"Crie uma landing page moderna para um estúdio de estética. Use um layout 'Split Hero' no topo. A paleta de cores deve ser Verde Musgo (#4A5240) e Terracota (#AD8A72) sobre um fundo Off-White (#F7F5F0). Priorize uma grid de serviços com fotos logo após o Hero. A tipografia deve misturar Playfair Display (títulos) com Inter (texto)."
-
-📄 Licença
-
-Desenvolvido exclusivamente para Laroo Beauty & Care.
-
-Todos os direitos de imagem e marca reservados.
-
-Desenvolvido por Avante Digital.
+\`\`\`bash
+laroo-beauty-care/
+├── public/                 # Favicons, sitemap, manifest e fotos estáticas
+├── screenshots/            # Capturas de demonstração para o README
+├── src/
+│   ├── assets/             # Imagens e ícones otimizados
+│   ├── components/         # Componentes modulares (Navbar, Hero, Services, Footer, UI)
+│   ├── data/               # Dados estáticos de serviços, preços e depoimentos
+│   ├── hooks/              # Custom hooks para comportamento de UI e cookies
+│   ├── lib/                # Utilitários de estilização (cn, tailwind-merge)
+│   ├── pages/              # Páginas da aplicação (Home, NotFound)
+│   ├── App.tsx             # Roteamento e estrutura principal
+│   └── main.tsx            # Ponto de entrada da aplicação React
+├── tailwind.config.ts      # Configuração de temas, cores oficiais e fontes
+├── package.json            # Dependências e scripts do projeto
+└── vite.config.ts          # Configuração do bundler Vite
+\`\`\`
+
+---
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) (versão 18+) ou [Bun](https://bun.sh/)
+- Gerenciador de pacotes (npm, pnpm ou bun)
+
+### Passo a passo:
+
+1. **Clonar o repositório:**
+   \`\`\`bash
+   git clone https://github.com/alexandra-carneiro/laroo-beauty-care.git
+   cd laroo-beauty-care
+   \`\`\`
+
+2. **Instalar dependências:**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Executar o servidor de desenvolvimento:**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+   Acesse a aplicação no navegador em \`http://localhost:5173\`.
+
+4. **Gerar build de produção:**
+   \`\`\`bash
+   npm run build
+   \`\`\`
+
+---
+
+## 👩‍💻 Autoria & Créditos
+
+Projeto desenvolvido com foco em excelência visual e código limpo por **Alexandra Carneiro**:
+
+- **GitHub:** [@alexandra-carneiro](https://github.com/alexandra-carneiro)
+- **LinkedIn:** [carneiro-alexandra](https://www.linkedin.com/in/carneiro-alexandra/)
+- **Portfólio:** [alexandracarneiro.tech](https://alexandracarneiro.tech/)
+
+*Direitos de marca e imagem reservados a **Laroo Beauty & Care** (Coimbra, Portugal).*
