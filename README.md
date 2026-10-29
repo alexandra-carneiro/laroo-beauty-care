@@ -1,156 +1,79 @@
-<div align="center">
-
 # 🌿 Laroo Beauty & Care
 
-**Website Institucional & Plataforma de Agendamentos**
+**Projeto de Extensão Universitária (PEX) | Bacharelado em Engenharia de Software**  
+*Website institucional e plataforma de agendamentos para espaço de beleza e bem-estar em Coimbra, Portugal.*
 
-*"Beleza natural, experiência sensorial."*
-
-[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite_5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://laroo-beauty-care.vercel.app/)
-
-<p align="center">
-  <a href="https://laroo-beauty-care.vercel.app/" target="_blank"><strong>🌐 Visitar Website Oficial</strong></a> •
-  <a href="https://alexandracarneiro.tech/" target="_blank"><strong>💼 Portfólio da Desenvolvedora</strong></a>
-</p>
-
-</div>
+🔗 **Website Oficial no ar:** [laroo-beauty-care.vercel.app](https://laroo-beauty-care.vercel.app/)  
+💼 **Portfólio da Desenvolvedora:** [alexandracarneiro.tech](https://alexandracarneiro.tech/)
 
 ---
 
-## 📖 Sobre o Projeto
+## 🎯 Contexto e Origem do Projeto (PEX)
 
-O **Laroo Beauty & Care** é um espaço de estética e bem-estar localizado em **Coimbra, Portugal**, dedicado a tratamentos de alto padrão em unhas, pestanas, cuidados faciais e terapias corporais.
+Este projeto foi concebido e desenvolvido no âmbito do **Projeto de Extensão Universitária (PEX)** da minha graduação em **Engenharia de Software** (Faculdade Descomplica). 
 
-Este projeto consistiu no desenvolvimento sob medida de uma aplicação web institucional focada em **alta conversão**, desenhada para valorizar a identidade visual da marca, apresentar o portfólio de serviços de forma sensorial e descomplicar a jornada de agendamento de clientes através de canais diretos (WhatsApp).
+O propósito da extensão é aplicar competências técnicas e científicas em benefício da comunidade e de negócios locais. O desafio prático foi criar uma presença digital profissional, moderna e de alta conversão para o estúdio de estética **Laroo Beauty & Care**, atendendo às reais necessidades da proprietária e do seu público.
 
-### 💡 Destaques do Desenvolvimento:
-- **Engenharia com Apoio de IA:** Aceleração de rotinas de codificação, refinamento de componentes reutilizáveis e otimizações avançadas de SEO e performance.
-- **Validação com a Proprietária:** Ciclos contínuos de alinhamento estético, tipografia, tom de voz e cartela de cores diretamente com a proprietária do estúdio.
-- **Arquitetura Moderna & Escalável:** Construído com React, TypeScript e Tailwind CSS, integrado a um pipeline de CI/CD automatizado na plataforma Vercel.
+---
+
+## 🤝 Soft Skills & Relacionamento com a Cliente
+
+Mais do que o desenvolvimento técnico, o maior diferencial deste projeto foi a oportunidade de exercitar e aprofundar competências interpessoais e de gestão em um cenário corporativo real:
+
+* **Comunicação Ativa & Alinhamento:** Condução de entrevistas iniciais com a proprietária do espaço para entender a visão da marca, o perfil dos clientes atendidos e os objetivos comerciais.
+* **Levantamento e Tradução de Requisitos:** Conversão de necessidades de negócio (como *“atrair clientes para tratamentos específicos”* e *“evitar perda de tempo no WhatsApp”*) em funcionalidades de software intuitivas.
+* **Ciclos Iterativos de Validação e Feedback:** Apresentação de propostas visuais e de navegação em etapas contínuas, ajustando elementos gráficos, textos e fluxos com base na aprovação direta da cliente.
+* **Gestão de Prazos e Compromisso:** Planeamento, entrega e publicação do projeto no ar em conformidade com o cronograma acordado.
 
 ---
 
 ## 📸 Demonstração Visual
 
-<div align="center">
+Abaixo, a interface desenvolvida com foco em estética minimalista, sensorial e responsiva:
 
 ### 💻 Versão Desktop
-<img src="screenshots/desktop-preview.png" width="800" alt="Laroo Beauty Care - Desktop Showcase" style="border-radius: 8px; border: 1px solid #4A5240;" />
+![Laroo Beauty Care - Desktop Showcase](screenshots/desktop-preview.png)
 
-### 📱 Versão Mobile Responsiva
-<img src="screenshots/mobile-preview.png" width="300" alt="Laroo Beauty Care - Mobile Showcase" style="border-radius: 8px; border: 1px solid #4A5240;" />
-
-</div>
-
----
-
-## 🎨 Identidade Visual & Design System
-
-A estética do projeto foi concebida para transmitir calma, pureza, sofisticação e conexão com a natureza:
-
-### 🎨 Paleta de Cores Oficial
-
-| Cor | Código Hex | Uso Principal |
-| :--- | :--- | :--- |
-| **Verde Musgo Profundo** | \`#4A5240\` | Títulos principais, botões primários, rodapé e acentos estruturais |
-| **Terracota Aveludado** | \`#AD8A72\` | Destaques sutis, ícones, estados de hover e badges |
-| **Bege Areia / Pedra** | \`#D9CFC4\` | Divisórias, bordas de cards e elementos neutros |
-| **Off-White / Creme** | \`#F7F5F0\` | Fundo principal da página (proporciona leitura calorosa e suave) |
-| **Branco Puro** | \`#FFFFFF\` | Superfícies de cards e caixas de leitura |
-
-### ✍️ Tipografia
-- **Títulos & Headlines:** *Playfair Display* (Serifada) — confere elegância atemporal e sofisticação editorial.
-- **Corpo & Navegação:** *Inter* (Sans-serif) — garante máxima legibilidade, clareza e ritmo moderno em qualquer dispositivo.
+### 📱 Versão Mobile (Smartphones)
+<p align="center">
+  <img src="screenshots/mobile-preview.png" width="280" alt="Laroo Beauty Care - Mobile Showcase" />
+</p>
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 💡 A Solução Desenvolvida
 
-| Camada | Tecnologias Utilizadas |
-| :--- | :--- |
-| **Core & Framework** | [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite (SWC)](https://vitejs.dev/) |
-| **Estilização & UI** | [Tailwind CSS](https://tailwindcss.com/), Radix UI Primitives, Lucide React, Framer Motion |
-| **Formulários & Dados** | React Hook Form, Zod, TanStack React Query |
-| **Performance & SEO** | Vite Plugin Image Optimizer (Sharp), React Helmet Async, Sitemap e Metatags Open Graph |
-| **Hospedagem & CI/CD** | [Vercel](https://vercel.com/) (Deploy contínuo acionado a cada push no Git) |
-| **Privacidade & Métricas** | Google Analytics com Cookie Banner integrado em conformidade com o **RGPD** |
+O site foi desenhado para equilibrar a identidade sensorial do estúdio com a facilidade de conversão:
+
+- **Vitrine Clara de Procedimentos:** Apresentação organizada dos serviços (unhas de gel, extensão de pestanas, tratamentos faciais e massagens) com valores-base para pré-qualificar o cliente.
+- **Fluxo de Conversão Direta:** Botões estratégicos de agendamento que direcionam o utilizador diretamente para o WhatsApp do espaço com mensagens personalizadas.
+- **Design Totalmente Responsivo (*Mobile-First*):** Navegação fluida e agradável em telemóveis, onde se concentra a grande maioria do público do estúdio.
+- **Privacidade & Conformidade:** Inclusão de banner de consentimento de cookies e políticas alinhadas com o RGPD europeu.
 
 ---
 
-## 💎 Funcionalidades Principais
+## 🛠️ Tecnologias Utilizadas
 
-- **✨ Vitrine Visual de Serviços:** Apresentação clara de procedimentos (Unhas de Gel, Extensão de Pestanas, Limpeza de Pele, Massagens Relaxantes) com valores-base para qualificação de leads.
-- **📲 Conversão Direta via WhatsApp:** Chamadas para ação (CTA) inteligentes que abrem o canal de contato do estúdio com mensagens pré-formatadas para o serviço desejado.
-- **🎯 Sticky Navbar com Glassmorphism:** Barra de navegação fixa com efeito translúcido para acesso instantâneo a menus, localização e botão de reserva.
-- **🍪 Banner de Cookies (RGPD):** Gerenciamento ético de consentimento para ativação de scripts analíticos.
-- **📱 Responsividade Impecável:** Interface com foco *Mobile-First*, garantindo experiência tátil agradável em smartphones, tablets e desktops.
-
----
-
-## 📂 Estrutura de Diretórios
-
-\`\`\`bash
-laroo-beauty-care/
-├── public/                 # Favicons, sitemap, manifest e fotos estáticas
-├── screenshots/            # Capturas de demonstração para o README
-├── src/
-│   ├── assets/             # Imagens e ícones otimizados
-│   ├── components/         # Componentes modulares (Navbar, Hero, Services, Footer, UI)
-│   ├── data/               # Dados estáticos de serviços, preços e depoimentos
-│   ├── hooks/              # Custom hooks para comportamento de UI e cookies
-│   ├── lib/                # Utilitários de estilização (cn, tailwind-merge)
-│   ├── pages/              # Páginas da aplicação (Home, NotFound)
-│   ├── App.tsx             # Roteamento e estrutura principal
-│   └── main.tsx            # Ponto de entrada da aplicação React
-├── tailwind.config.ts      # Configuração de temas, cores oficiais e fontes
-├── package.json            # Dependências e scripts do projeto
-└── vite.config.ts          # Configuração do bundler Vite
-\`\`\`
+- **Frontend:** React, TypeScript e Tailwind CSS.
+- **Biblioteca de Interface:** Radix UI / shadcn/ui e Lucide Icons para componentes modulares e acessíveis.
+- **Ferramentas de IA:** Utilizadas como apoio à codificação, acelerando a componentização e refinamento técnico de performance.
+- **Hospedagem & CI/CD:** Deploy contínuo na plataforma **Vercel** via integração direta com o repositório Git.
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🏆 Conclusão & Impacto
 
-### Pré-requisitos
-- [Node.js](https://nodejs.org/) (versão 18+) ou [Bun](https://bun.sh/)
-- Gerenciador de pacotes (npm, pnpm ou bun)
+A entrega do projeto consolidou a presença online do **Laroo Beauty & Care**, conferindo maior profissionalismo e agilizando a captação e o contato com novas clientes.
 
-### Passo a passo:
-
-1. **Clonar o repositório:**
-   \`\`\`bash
-   git clone https://github.com/alexandra-carneiro/laroo-beauty-care.git
-   cd laroo-beauty-care
-   \`\`\`
-
-2. **Instalar dependências:**
-   \`\`\`bash
-   npm install
-   \`\`\`
-
-3. **Executar o servidor de desenvolvimento:**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-   Acesse a aplicação no navegador em \`http://localhost:5173\`.
-
-4. **Gerar build de produção:**
-   \`\`\`bash
-   npm run build
-   \`\`\`
+Para mim, como futura Engenheira de Software, a experiência representou um marco prático na união entre **código, produto e relacionamento humano**, comprovando a capacidade de entregar uma solução funcional que gera valor direto para um negócio real.
 
 ---
 
-## 👩‍💻 Autoria & Créditos
+## 👩‍💻 Autoria
 
-Projeto desenvolvido com foco em excelência visual e código limpo por **Alexandra Carneiro**:
+**Alexandra Carneiro**  
+*Graduanda em Engenharia de Software | Técnica Especialista em Cibersegurança & Redes*
 
-- **GitHub:** [@alexandra-carneiro](https://github.com/alexandra-carneiro)
-- **LinkedIn:** [carneiro-alexandra](https://www.linkedin.com/in/carneiro-alexandra/)
+- **GitHub:** [@alexandra-carneiro](https://github.com/alexandra-carneiro)  
+- **LinkedIn:** [carneiro-alexandra](https://www.linkedin.com/in/carneiro-alexandra/)  
 - **Portfólio:** [alexandracarneiro.tech](https://alexandracarneiro.tech/)
-
-*Direitos de marca e imagem reservados a **Laroo Beauty & Care** (Coimbra, Portugal).*
