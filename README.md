@@ -3,8 +3,7 @@
 **Projeto de Extensão Universitária (PEX) | Bacharelado em Engenharia de Software**  
 *Website institucional e plataforma de agendamentos para espaço de beleza e bem-estar em Coimbra, Portugal.*
 
-🔗 **Website Oficial no ar:** [laroo-beauty-care.vercel.app](https://laroo-beauty-care.vercel.app/)  
-💼 **Portfólio da Desenvolvedora:** [alexandracarneiro.tech](https://alexandracarneiro.tech/)
+🔗 **Website Oficial no ar:** [laroo-beauty-care.vercel.app](https://laroo-beauty-care.vercel.app/)
 
 ---
 
